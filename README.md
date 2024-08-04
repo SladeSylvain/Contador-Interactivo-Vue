@@ -1,25 +1,24 @@
-# expe
+# Contador Vue Básico
 
-## Project setup
-```
-npm install
-```
+## Descripción
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+"Contador Vue Básico" es una aplicación simple creada con Vue.js que permite incrementar y decrementar un contador mediante botones. La aplicación muestra el valor actual del contador y su estado (positivo, negativo o cero) de manera interactiva.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Características
 
-### Lints and fixes files
-```
-npm run lint
-```
+- Incremento y decremento del contador con botones.
+- Visualización del valor actual del contador.
+- Mensajes dinámicos para indicar si el valor es positivo, negativo o cero.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# Contador-Interactivo-Vue
+## Tecnologías Utilizadas
+
+- [Vue.js](https://vuejs.org/): Framework de JavaScript para construir interfaces de usuario interactivas.
+- [HTML](https://developer.mozilla.org/es/docs/Web/HTML): Lenguaje de marcado para estructurar la página.
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS): Hojas de estilo para el diseño y el estilo de la aplicación.
+
+## Instalación
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/SladeSylvain/contadores_vue_basico.git
