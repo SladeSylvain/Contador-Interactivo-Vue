@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1 v-bind:style="waffle">Bienvenido {{nombre}}</h1>
+  <div v-bind:style="centrar">
+  <button  @click="decremento">-</button>
+  <span>{{contador}}</span>
+  <button @click="incremento">+</button>
+
+  <div v-if="contador<0">Negativo</div>
+  <div v-else-if="contador>0">Positivo</div>
+  <div v-else="contador">Valor 0</div>
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+<script setup>
+import {ref} from "vue"
+const nombre = "Alexander"
+const waffle = "color:gray;font-size:30px;text-align:center"
+const centrar = "color:gray;font-size:20px;text-align:center"
+const contador = ref(0)
+const incremento= ()=>{
+  contador.value++
 }
+const decremento = ()=>{
+  contador.value--
+}
+
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style scoped>
+body{
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
